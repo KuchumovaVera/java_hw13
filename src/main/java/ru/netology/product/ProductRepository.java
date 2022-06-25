@@ -18,11 +18,9 @@ public class ProductRepository {
     }
 
     public Product[] findAll() {
-
         return products;
     }
 
-    //удалить объект по id
     public void removeById(int id) {
         if (products.length != 0) {
             if (findById(id) == null) {
@@ -42,10 +40,9 @@ public class ProductRepository {
         }
     }
 
-
-       public Product findById(int Id) {
+    public Product findById(int id) {
         for (int i = 0; i < products.length; i++) {
-            if (products[i].getId() == Id) {
+            if (products[i].getId() == id) {
                 return products[i];
             }
         }

@@ -66,7 +66,7 @@ public class ProductTest {
 
         Assertions.assertArrayEquals(expected, actual);
     }
-   
+
     @Test
     void shouldRepositoryRemoteById() {
         ProductManager manager = new ProductManager();
